@@ -1,0 +1,57 @@
+//#include <stdafx.h>
+#include <stdio.h>
+#include <conio.h>
+#include <iostream>
+#include <iomanip>
+#include <time.h>
+
+int main()
+{int A[3][3],i,j,B[3][3],n; 
+ 
+printf("Введіть елементи матриці= \n");
+for (i=0;i<3;i++)
+for (j=0;j<3;j++)
+{
+    scanf("%d",&A[i][j]);
+    
+}
+printf("Матриця з елементами що ви ввели= \n");
+    for (i=0;i<3;i++){
+    for (j=0;j<3;j++)
+    printf("%d ",A[i][j]);
+ 
+    printf("\n");}
+ 
+    printf("Транспонована матриця= \n");
+    for (i=0;i<3;i++){
+    for (j=0;j<3;j++)
+        printf("%d ",A[j][i]);
+    printf("\n");}
+ 
+    printf("\n");
+    printf("\n");
+ 
+    for (i=0;i<3;i++)
+    {
+    for (j=0;j<3;j++)
+    B[i][j]=A[j][i];
+    }
+ 
+    for (i=0;i<3;i++)
+    {
+    for (j=0;j<3;j++)
+    printf("%d ",B[i][j]);
+    printf("\n");}
+    
+    
+    
+    {if ((i!=j)&&(A[i][j]=B[i][j]))
+        printf ("Масив семетрицний= ");
+    else
+    printf ("Масив не семетрицний= ");
+    }
+ 
+ 
+    getchar();
+    getchar();
+}
